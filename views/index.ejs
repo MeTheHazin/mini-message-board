@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title"><%= title %></h1>
+
+    <div class="grid-container">
+      <% for (let i = 0; i < messages.length; i++) { %>
+      <a href="/message/<%= messages[i].id %>">
+        <div class="message-box">
+          <div class="user"><%= messages[i].user %></div>
+          <div class="text">
+            <%= messages[i].text.length > 40 ? messages[i].text.substring(0, 40)
+            + '…' : messages[i].text %>
+          </div>
+          <div class="time"><%= messages[i].added.toLocaleString() %></div>
+        </div>
+      </a>
+
+      <% } %>
+    </div>
+
+    <a href="/new">
+      <button class="bt">Write a New Message</button>
+    </a>
+  </body>
+</html>

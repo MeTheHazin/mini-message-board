@@ -1,0 +1,184 @@
+/* === Base Reset === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  padding: 2em;
+}
+
+/* === Title === */
+#title,
+.form-container h1,
+.message-detail-container h1 {
+  font-size: 2em;
+  text-align: center;
+  color: #1f7a5b;
+  margin-bottom: 1.5em;
+}
+
+/* === Grid Layout === */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  padding: 1em;
+}
+
+/* === Message Card === */
+.message-box {
+  background-color: #f9fefb;
+  border: 2px solid #daf3e6;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.message-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.user {
+  font-weight: bold;
+  color: #ff7f50;
+  margin-bottom: 0.5em;
+}
+
+.text {
+  color: #444;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+.time {
+  font-size: 0.8em;
+  color: #888;
+  text-align: right;
+}
+
+/* === Button Styles === */
+.bt,
+.form-container button,
+.button-link,
+.back-button {
+  background-color: #1f7a5b;
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.bt:hover,
+.form-container button:hover,
+.button-link:hover,
+.back-button:hover {
+  background-color: #155c44;
+}
+
+/* === Form Page Layout === */
+body.form-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fefefe;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 2em;
+  border: 2px solid #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 90%;
+  max-width: 500px;
+}
+
+/* === Form Inputs === */
+.form-container label {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: #fdfdfd;
+}
+
+.form-container textarea {
+  resize: vertical;
+}
+
+/* === Detail Page Layout === */
+body.detail-page {
+  display: flex;
+  justify-content: center;
+  padding: 4em 1em;
+  background-color: #ffffff;
+}
+
+.message-detail-container {
+  background-color: #fff;
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  padding: 2em;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.message-detail-container p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.message-detail-container blockquote {
+  background-color: #fef9f5;
+  border-left: 5px solid #ffa07a;
+  padding: 1em;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 1.5em;
+  border-radius: 6px;
+}
+
+/* === Responsive Layout === */
+@media (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.message-box a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="detail-page">
+    <div class="message-detail-container">
+      <h1>Message from <%= message.user %></h1>
+      <p><strong>Sent:</strong> <%= message.added.toLocaleString() %></p>
+      <p><strong>Message:</strong></p>
+      <blockquote><%= message.text %></blockquote>
+      <a href="/" class="button-link">← Back to Board</a>
+    </div>
+  </body>
+</html>
