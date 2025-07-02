@@ -32,7 +32,13 @@ indexRouter.post("/new", (req, res) => {
   try {
     const { messageText, messageUser } = req.body;
 
-    const nextId = messages.length ? messages[messages.length - 1].id + 1 : 1;
+    let nextId;
+
+    if (messages.length > 0) {
+      nextId = messages[messages.length - 1].id + 1;
+    } else {
+      nextId = 1;
+    }
 
     messages.push({
       id: nextId,
