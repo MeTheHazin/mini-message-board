@@ -15,8 +15,9 @@
         <div class="message-box">
           <div class="user"><%= messages[i].user %></div>
           <div class="text">
-            <%= messages[i].text.length > 40 ? messages[i].text.substring(0, 40)
-            + '…' : messages[i].text %>
+            <% if (messages[i].text.length > 40) { %> <%=
+            messages[i].text.substring(0, 40) + '…' %> <% } else { %> <%=
+            messages[i].text %> <% } %>
           </div>
           <div class="time"><%= messages[i].added.toLocaleString() %></div>
         </div>
