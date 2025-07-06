@@ -51,10 +51,14 @@ DATABASE_URL=your_postgres_connection_string
 
 SESSION_SECRET=super_secret_key
 
-DB_USER=<your usernam>
-DB_PASSWORD=<your password>
+DB_USER=<your_usernam>
+
+DB_PASSWORD=<your_password>
+
 DB_NAME=mini_messagedb
+
 DB_HOST=localhost
+
 DB_PORT=5432
 
 -----
