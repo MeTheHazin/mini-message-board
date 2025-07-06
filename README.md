@@ -1,5 +1,5 @@
 
-A full-stack, session-based message board where users can sign up, log in, share messages, and manage their posts. Built with **Node.js**, **Express**, **EJS**, **PostgreSQL**, and **Passport.js**, it’s a clean and responsive app with a modern UI and expressive front-end logic.
+A full-stack, session-based message board where users can sign up, log in, write messages, and manage their posts. Built with **Node.js**, **Express**, **EJS**, **PostgreSQL**, and **Passport.js**, it’s a clean and responsive app with a modern UI and expressive front-end logic.
 
 ---
 
