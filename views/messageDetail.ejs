@@ -8,11 +8,22 @@
   </head>
   <body class="detail-page">
     <div class="message-detail-container">
-      <h1>Message from <%= message.user %></h1>
-      <p><strong>Sent:</strong> <%= message.added.toLocaleString() %></p>
+      <h1>Message from <%= message.username %></h1>
+      <p><strong>Sent:</strong> <%= message.time_added %></p>
       <p><strong>Message:</strong></p>
       <blockquote><%= message.text %></blockquote>
       <a href="/" class="button-link">← Back to Board</a>
+
+      <% if(currentUser) { %> <% if (message.username === currentUser.username)
+      { %>
+
+      <form action="/message/<%=message.id%>/delete" method="post">
+        <button type="submit" class="delete btn">delete this post</button>
+      </form>
+
+      <a href="/message/<%= message.id%>/update"> update this post</a>
+
+      <% } %> <% } %>
     </div>
   </body>
 </html>

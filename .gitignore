@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Build outputs (if applicable)
+dist/
+build/
+
+# Optional IDE/editor configs
+.vscode/
+.idea/
+*.sw?
+
+# Dependency lock files (if you're choosing one over the other)
+# Uncomment depending on your tool of choice
+# package-lock.json
+# yarn.lock
+
+# Coverage reports
+coverage/
+
+# NPM logs or audit files
+.npm/
+
+# Local database or session files (if any)
+*.sqlite
+*.sqlite3
+*.db
+*.tgz

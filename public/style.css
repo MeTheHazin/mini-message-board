@@ -182,3 +182,6 @@ body.detail-page {
   text-decoration: none;
   color: inherit;
 }
+.form-container.button-link {
+  color: #444;
+}

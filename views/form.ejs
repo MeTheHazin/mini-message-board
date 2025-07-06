@@ -8,19 +8,11 @@
   </head>
   <body class="form-page">
     <div class="form-container">
-      <h1>Write your message for us, lad!</h1>
+      <h1>hey <%= currentUser.username %>. what's in yer mind lad?</h1>
 
       <form action="/new" method="post">
-        <label for="messageUser">What's your name, lad?</label>
-        <input type="text" name="messageUser" id="messageUser" required />
-
         <label for="messageText">Tell us what's on your mind</label>
-        <textarea
-          name="messageText"
-          id="messageText"
-          rows="5"
-          required
-        ></textarea>
+        <textarea name="text" id="messageText" rows="5" required></textarea>
 
         <button type="submit">Send</button>
       </form>

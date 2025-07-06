@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>update</title>
+  </head>
+  <body>
+    <h1>update your post <%= message.username%></h1>
+    <form action="/message/<%=message.id%>/update" method="post">
+      <label for="messageText">Tell us what's on your mind</label>
+      <textarea name="text" id="messageText" rows="5" required>
+            <%= message.text %>
+        </textarea
+      >
+
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
