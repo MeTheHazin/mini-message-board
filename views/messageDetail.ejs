@@ -17,11 +17,12 @@
       <% if(currentUser) { %> <% if (message.username === currentUser.username)
       { %>
 
-      <form action="/message/<%=message.id%>/delete" method="post">
-        <button type="submit" class="delete btn">delete this post</button>
-      </form>
-
-      <a href="/message/<%= message.id%>/update"> update this post</a>
+      <div class="post-controls">
+        <form action="/message/<%=message.id%>/delete" method="post">
+          <button type="submit" class="delete btn">Delete this post</button>
+        </form>
+        <a href="/message/<%= message.id %>/update">Update this post</a>
+      </div>
 
       <% } %> <% } %>
     </div>

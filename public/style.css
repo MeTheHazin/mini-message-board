@@ -185,3 +185,101 @@ body.detail-page {
 .form-container.button-link {
   color: #444;
 }
+
+/* === Auth Links & Greeting === */
+.auth-bar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  margin-bottom: 2em;
+  align-items: center;
+}
+
+.auth-bar a {
+  color: #1f7a5b;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.auth-bar a:hover {
+  background-color: #eaf8f1;
+}
+
+/* === Welcome Message === */
+.welcome-msg {
+  font-size: 1em;
+  color: #444;
+  font-weight: 500;
+  margin-right: auto;
+}
+
+/* === Delete User Button === */
+form.delete-user-form {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+form.delete-user-form button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+form.delete-user-form button:hover {
+  background-color: #e63946;
+}
+
+/* === Delete Post Button (Detail Page) === */
+.message-detail-container .delete.btn {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 1.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.message-detail-container .delete.btn:hover {
+  background-color: #e63946;
+}
+
+/* === Update Link Button === */
+.message-detail-container a[href*="/update"] {
+  display: inline-block;
+  background-color: #1f7a5b;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1em;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.2s ease;
+}
+
+.message-detail-container a[href*="/update"]:hover {
+  background-color: #155c44;
+}
+
+.post-controls {
+  margin-top: 2em;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+  flex-wrap: wrap;
+}

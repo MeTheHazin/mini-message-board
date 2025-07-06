@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <% if (!currentUser) {%>
-    <a href="/sign-up"> sign up</a>
-
-    <a href="/log-in"> log in</a>
-
-    <%} %> <% if (currentUser) { %>
-    <p>Welcome, <%= currentUser.username %>!</p>
-    <a href="/log-out"> log out</a>
-
-    <form action="/user/<%= currentUser.id %>/delete" method="post">
-      <button type="submit" id="delete btn">delete this user</button>
-    </form>
-    <% } %>
+    <div class="auth-bar">
+      <% if (!currentUser) { %>
+      <a href="/sign-up">Sign up</a>
+      <a href="/log-in">Log in</a>
+      <% } %> <% if (currentUser) { %>
+      <span class="welcome-msg">Welcome, <%= currentUser.username %>!</span>
+      <a href="/log-out">Log out</a>
+      <form
+        class="delete-user-form"
+        action="/user/<%= currentUser.id %>/delete"
+        method="post"
+      >
+        <button type="submit">Delete user</button>
+      </form>
+      <% } %>
+    </div>
 
     <h1 id="title"><%= title %></h1>
 
