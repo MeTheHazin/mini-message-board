@@ -30,7 +30,7 @@ A full-stack, session-based message board where users can sign up, log in, write
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer         | Stack                          |
 | ------------- | ------------------------------ |
@@ -43,10 +43,30 @@ A full-stack, session-based message board where users can sign up, log in, write
 
 ---
 
-## 🧪 Local Setup
+
+
+##  Local Setup
 add .env file
 DATABASE_URL=your_postgres_connection_string
+
 SESSION_SECRET=super_secret_key
+
+DB_USER=<your usernam>
+DB_PASSWORD=<your password>
+DB_NAME=mini_messagedb
+DB_HOST=localhost
+DB_PORT=5432
+
+-----
+
+##  Database Setup
+
+Make sure PostgreSQL is installed and running. Then:
+
+```bash
+createdb mini_messagedb
+psql -d mini_messagedb -f schema.sql
+
 
 
 ```bash
